@@ -1,0 +1,56 @@
+
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    border: 5px solid rgb(205, 16, 201);
+    margin: auto;
+    width: 280px;
+    height:350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px;
+    background-color: #E0B8ff;
+}
+
+#otp{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 40px auto;
+    background-color: rgb(253, 186, 253);
+    color: rgb(106, 2, 158);
+    font-size: 40px;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+p{
+    text-align: center;
+    color: purple;
+    font-size: 15px;
+}
+
+#generator{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 30px auto;
+    color: rgb(65, 2, 66);
+    font-weight: bolder;
+    background-color: rgb(198, 92, 248);
+
+}
+#check{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px auto;
+    color: rgb(97, 1, 5);
+    font-weight: bolder;
+    background-color: rgb(198, 92, 248);
+
+}

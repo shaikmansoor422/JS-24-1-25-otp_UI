@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>OTP GENERATOR</h1>
+    <div class="container">
+        <div id="otp">xxxxxx</div>
+        <p class="msg">your OTP valid for only 1 minute,
+            <br>please dont share your OTP
+        </p>
+        <div id="generator">Generate OTP</div>
+        <div id="check">Verify</div>
+    </div>
+    <script>
+        document.body.style.backgroundColor="grey"
+
+        function otp_generate(){
+        let num = Math.floor( Math.random()*1000000)
+        let otpbox = document.getElementById("otp")
+        if (num < 100000){
+        num = num + 100000
+        otpbox.innerHTML = num;
+        }
+        else{
+            otpbox.innerHTML = num;
+        }
+        let clr = num
+        document.body.style.backgroundColor = `#${clr}`
+        document.body.appendChild(clr)
+        }
+        let gen = document.getElementById("generator")
+        gen.addEventListener("click",otp_generate)
+
+        function verification(){
+            let verify = document.getElementById("otp")
+            verify.innerHTML = "Verified"
+        }
+        let vef = document.getElementById("check")
+        check.addEventListener("click", verification)
+
+</script>
+</body>
+</html>
